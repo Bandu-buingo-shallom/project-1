@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sign Up</title>
+    <style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+
+		nav {
+			background-color: #333;
+			padding: 10px;
+			display: flex;
+			justify-content: flex-end;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			margin-left: 10px;
+		}
+
+		nav a:first-child {
+			margin-left: 0;
+		}
+
+		.signup-container {
+			margin: 50px auto;
+			max-width: 500px;
+			background-color: #fff;
+			padding: 20px;
+			border: 1px solid #ccc;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+		}
+
+		h2 {
+			margin-top: 0;
+		}
+
+		form label {
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		form input[type="text"],
+		form input[type="tel"],
+		form input[type="email"],
+		form input[type="password"],
+		form input[type="checkbox"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 10px;
+		}
+
+		form input[type="checkbox"] {
+			display: inline-block;
+			margin-right: 5px;
+		}
+
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		form input[type="submit"]:hover {
+			background-color: #555;
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		<a href="#">Login</a>
+		<a href="#">Sign Up</a>
+		<a href="#">Help</a>
+	</nav>
+	<div class="signup-container">
+		<h2>Sign Up</h2>
+		<form action="#" method="post">
+			<label for="first-name">First Name:</label>
+			<input type="text" id="first-name" name="first-name" required>
+			<label for="last-name">Last Name:</label>
+			<input type="text" id="last-name" name="last-name" required>
+			<label for="phone-number">Phone Number:</label>
+			<input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<label for="re-enter-password">Re-enter Password:</label>
+			<input type="password" id="re-enter-password" name="re-enter-password" required>
+			<label for="terms-conditions">I accept the <a href="#">terms and conditions</a></label>
+			<input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+			<input type="submit" value="Sign Up">
+		</form>
+	</div>
+</body>
+</html>
